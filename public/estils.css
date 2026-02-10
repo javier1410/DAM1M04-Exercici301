@@ -1,8 +1,30 @@
 body {
-    font-family: Roboto;
-    font-size: 1.1em;
+  font-family: Arial, sans-serif;
+  margin: 2rem;
 }
 
-strong {
-    color: green;
+header nav a {
+  text-decoration: none;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.small {
+  background-color: lightgreen;
+}
+
+.large {
+  background-color: lightcoral;
 }

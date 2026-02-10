@@ -1,0 +1,33 @@
+{{> header}}
+
+<h1>{{title}}</h1>
+<h2>{{subtitle}}</h2>
+
+<ul>
+{{#each cities}}
+  <li>
+    <strong>{{name}}</strong> —
+    {{lookup ../countries country}} —
+
+    {{#if population}}
+      {{population}} habitants
+    {{else}}
+      <em>Població desconeguda</em>
+    {{/if}}
+
+    |
+    {{#if coastal}}
+      🌊 Costanera
+    {{else}}
+      Interior
+    {{/if}}
+
+    |
+    {{#if (lte population ../limit)}}
+      <span class="badge small">Petita</span>
+    {{else}}
+      <span class="badge large">Gran</span>
+    {{/if}}
+  </li>
+{{/each}}
+</ul>
